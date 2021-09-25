@@ -9,6 +9,9 @@ window.auth0Client = await createAuth0Client({
  domain,
  client_id,
  redirect_uri,
+  cacheLocation: 'localstorage',
+  audience: 'https://expenses-api',
+  scope: 'read:reports',
 });
 
   // handle user navigation
